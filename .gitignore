@@ -1,0 +1,18 @@
+/target
+**/*.rs.bk
+*.pdb
+
+# proptest regression seeds are machine-specific scratch state
+**/*.proptest-regressions
+
+# criterion benchmark reports/history
+/target/criterion
+
+# editor/IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# generated stress-test fixtures, not checked in
+/fixtures/generated/

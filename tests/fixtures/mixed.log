@@ -1,0 +1,11 @@
+{"ts":"2024-03-15T10:00:00Z","level":"info","service":"orders-api","host":"host-1","message":"service started"}
+<13>1 2024-03-15T10:00:01Z host-2 auth - ID1 - user login succeeded for alice
+2024-03-15 10:00:02 INFO payments-worker: processing batch 1
+{"ts":"2024-03-15T10:00:03Z","level":"warn","service":"orders-api","host":"host-1","message":"slow query took 850ms"}
+<13>1 2024-03-15T10:00:04Z host-2 auth - ID2 - user login succeeded for bob
+{"ts":"2024-03-15T10:00:05Z","level":"error","service":"orders-api","host":"host-1","message":"db timeout for order 4471"}
+{"ts":"2024-03-15T10:00:05Z","level":"error","service":"orders-api","host":"host-1","message":"db timeout for order 9821"}
+{"ts":"2024-03-15T10:00:06Z","level":"error","service":"orders-api","host":"host-1","message":"db timeout for order 1123"}
+2024-03-15 10:00:07 ERROR payments-worker: card declined for user 55
+<13>1 2024-03-15T10:00:08Z host-2 auth - ID3 - user login succeeded for carol
+{"ts":"2024-03-15T10:00:09Z","level":"info","service":"orders-api","host":"host-1","message":"order 4471 retried successfully"}
