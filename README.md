@@ -2,23 +2,23 @@
 
 **Merge mixed-format logs into one coherent timeline, in seconds, before the incident review even starts.**
 
-![logsculpt](assets/hero.png)
+[![CI](https://github.com/SlateGitOrg/logsculpt/actions/workflows/ci.yml/badge.svg)](https://github.com/SlateGitOrg/logsculpt/actions/workflows/ci.yml)
 
-## The real problem
+## Why
 
 When something breaks in production, the first 20 minutes of an incident are almost never spent thinking — they're spent grepping. One service logs JSON, another logs BSD syslog, a third writes plaintext to a file some contractor wired up in 2019 with its own timestamp format. Before an on-call engineer can even see *what happened, in what order, across which services*, they're tailing four terminals, eyeballing clocks, and squinting for the one weird error buried in ten thousand ordinary ones.
 
 logsculpt exists to collapse that setup time to zero: point it at your logs, and it gives you one normalized, chronologically-merged timeline with statistically-flagged anomalies already highlighted — either in an interactive terminal UI you can scroll through live, or as clean JSON/CSV for piping into whatever you already use.
 
-## How it works
+## Architecture
 
 ```mermaid
 flowchart LR
-    A[Mixed log inputs<br/>JSON/syslog/plaintext] --> B[Parallel (rayon)<br/>streaming parsers]
-    B --> C[Normalized<br/>common schema]
-    C --> D[Anomaly-scoring stage<br/>rate spikes, rare-error clustering]
-    D --> E[Interactive ratatui<br/>TUI timeline]
-    D --> F[json/csv<br/>pipe output]
+    A["Mixed log inputs<br/>JSON, syslog, plaintext"] --> B["Streaming parsers<br/>(rayon, per-line)"]
+    B --> C["Normalized LogEntry<br/>schema"]
+    C --> D["Anomaly scoring<br/>rate spikes, rare-error clusters"]
+    D --> E["ratatui TUI<br/>timeline"]
+    D --> F["JSON / CSV<br/>output"]
 ```
 
 1. **Parsing.** Each input line is sniffed and routed to one of three parsers: a JSON-lines parser (tolerant of `timestamp`/`ts`/`@timestamp`, `level`/`severity`, `message`/`msg`, and friends), a syslog parser covering both RFC 3164 (legacy BSD) and RFC 5424 (structured-data), and a heuristic plaintext parser that regex-scans for embedded timestamps (ISO8601, Apache CLF, slash-dates) and severity keywords when a line matches neither format. Parsing is embarrassingly parallel — lines are split across threads with `rayon`, since each line's parse is independent of every other.
@@ -30,9 +30,14 @@ flowchart LR
 
 ## Quick start
 
+Prerequisites: a stable Rust toolchain and `jq` for the examples below.
+
 ```bash
 # Build
 cargo build --release
+
+# Try it on the bundled fixture (no TUI, JSON out)
+./target/release/logsculpt tests/fixtures/mixed.log --format json | head -2
 
 # Merge and view interactively (arrow keys / j,k to scroll, n = next anomaly, q to quit)
 ./target/release/logsculpt service-a.log service-b.log /var/log/syslog
@@ -54,6 +59,23 @@ Tune the detectors from the CLI:
   --bucket-ms 5000 --z-threshold 2.5 --min-spike-count 10 \
   --cluster-window-ms 30000 --rare-ratio 0.03 --min-cluster-size 4
 ```
+
+## Example
+
+`tests/fixtures/incident.log` is 120 normal requests, 120 routine `cache miss` errors and a burst of five new `payment gateway refused card` errors:
+
+```bash
+./target/release/logsculpt tests/fixtures/incident.log --format json \
+  | jq -c 'select(.is_rare_error_cluster) | {timestamp, severity, message}'
+```
+
+```json
+{"timestamp":"2024-03-15T10:05:30+00:00","severity":"ERROR","message":"2024-03-15 10:05:30 ERROR api: payment gateway refused card 1000"}
+{"timestamp":"2024-03-15T10:05:31+00:00","severity":"ERROR","message":"2024-03-15 10:05:31 ERROR api: payment gateway refused card 1001"}
+...
+```
+
+The cache-miss errors are common, so they are not flagged; only the new failure mode is.
 
 ## Supported log formats
 
@@ -101,7 +123,7 @@ cargo bench --bench throughput             # full statistical benchmark run (see
 
 The test suite is fully offline: parser correctness (unit + `proptest` property tests generating randomized valid/invalid inputs), anomaly-detection correctness on constructed timelines, and full CLI round-trips (`assert_cmd`) against fixture files and synthetically-generated temp logs. Nothing requires network access, Docker, or a running cluster.
 
-## Benchmarking throughput on large logs
+## Benchmarks
 
 `benches/throughput.rs` synthesizes a mixed JSON/syslog/plaintext corpus at increasing sizes (10K/100K/500K lines) and benchmarks sequential vs. `rayon`-parallel parsing, plus the cost of anomaly detection over already-parsed timelines. Parsing scales near-linearly with core count since each line's parse is independent; run `cargo bench` locally (ideally on a multi-core machine) to see the speedup and generate an HTML report under `target/criterion/report/index.html`. For true multi-GB stress testing, concatenate the corpus generator's output to disk (or point logsculpt at real rotated log archives) and time `logsculpt *.log --format json > /dev/null`.
 
@@ -113,6 +135,12 @@ docker run --rm -i logsculpt - --format json < app.log
 ```
 
 (The interactive TUI needs a real TTY — run with `docker run -it` and mount your logs as a volume instead of piping via stdin.)
+
+## Limitations
+
+- Anomaly detection is statistical (z-score buckets and fingerprint rarity), not a trained model; thresholds are tunable but not adaptive.
+- Plaintext parsing is heuristic and can misread timestamps in unusual formats; lines with no recognizable timestamp fall back to a caller-supplied default.
+- The whole input is held in memory to build the merged timeline.
 
 ## License
 

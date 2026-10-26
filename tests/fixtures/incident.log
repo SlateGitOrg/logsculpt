@@ -1,0 +1,245 @@
+2024-03-15 10:00:00 INFO api: handled request 0
+2024-03-15 10:00:05 INFO api: handled request 1
+2024-03-15 10:00:10 INFO api: handled request 2
+2024-03-15 10:00:15 INFO api: handled request 3
+2024-03-15 10:00:20 INFO api: handled request 4
+2024-03-15 10:00:25 INFO api: handled request 5
+2024-03-15 10:00:30 INFO api: handled request 6
+2024-03-15 10:00:35 INFO api: handled request 7
+2024-03-15 10:00:40 INFO api: handled request 8
+2024-03-15 10:00:45 INFO api: handled request 9
+2024-03-15 10:00:50 INFO api: handled request 10
+2024-03-15 10:00:55 INFO api: handled request 11
+2024-03-15 10:01:00 INFO api: handled request 12
+2024-03-15 10:01:05 INFO api: handled request 13
+2024-03-15 10:01:10 INFO api: handled request 14
+2024-03-15 10:01:15 INFO api: handled request 15
+2024-03-15 10:01:20 INFO api: handled request 16
+2024-03-15 10:01:25 INFO api: handled request 17
+2024-03-15 10:01:30 INFO api: handled request 18
+2024-03-15 10:01:35 INFO api: handled request 19
+2024-03-15 10:01:40 INFO api: handled request 20
+2024-03-15 10:01:45 INFO api: handled request 21
+2024-03-15 10:01:50 INFO api: handled request 22
+2024-03-15 10:01:55 INFO api: handled request 23
+2024-03-15 10:02:00 INFO api: handled request 24
+2024-03-15 10:02:05 INFO api: handled request 25
+2024-03-15 10:02:10 INFO api: handled request 26
+2024-03-15 10:02:15 INFO api: handled request 27
+2024-03-15 10:02:20 INFO api: handled request 28
+2024-03-15 10:02:25 INFO api: handled request 29
+2024-03-15 10:02:30 INFO api: handled request 30
+2024-03-15 10:02:35 INFO api: handled request 31
+2024-03-15 10:02:40 INFO api: handled request 32
+2024-03-15 10:02:45 INFO api: handled request 33
+2024-03-15 10:02:50 INFO api: handled request 34
+2024-03-15 10:02:55 INFO api: handled request 35
+2024-03-15 10:03:00 INFO api: handled request 36
+2024-03-15 10:03:05 INFO api: handled request 37
+2024-03-15 10:03:10 INFO api: handled request 38
+2024-03-15 10:03:15 INFO api: handled request 39
+2024-03-15 10:03:20 INFO api: handled request 40
+2024-03-15 10:03:25 INFO api: handled request 41
+2024-03-15 10:03:30 INFO api: handled request 42
+2024-03-15 10:03:35 INFO api: handled request 43
+2024-03-15 10:03:40 INFO api: handled request 44
+2024-03-15 10:03:45 INFO api: handled request 45
+2024-03-15 10:03:50 INFO api: handled request 46
+2024-03-15 10:03:55 INFO api: handled request 47
+2024-03-15 10:04:00 INFO api: handled request 48
+2024-03-15 10:04:05 INFO api: handled request 49
+2024-03-15 10:04:10 INFO api: handled request 50
+2024-03-15 10:04:15 INFO api: handled request 51
+2024-03-15 10:04:20 INFO api: handled request 52
+2024-03-15 10:04:25 INFO api: handled request 53
+2024-03-15 10:04:30 INFO api: handled request 54
+2024-03-15 10:04:35 INFO api: handled request 55
+2024-03-15 10:04:40 INFO api: handled request 56
+2024-03-15 10:04:45 INFO api: handled request 57
+2024-03-15 10:04:50 INFO api: handled request 58
+2024-03-15 10:04:55 INFO api: handled request 59
+2024-03-15 10:05:00 INFO api: handled request 60
+2024-03-15 10:05:05 INFO api: handled request 61
+2024-03-15 10:05:10 INFO api: handled request 62
+2024-03-15 10:05:15 INFO api: handled request 63
+2024-03-15 10:05:20 INFO api: handled request 64
+2024-03-15 10:05:25 INFO api: handled request 65
+2024-03-15 10:05:30 INFO api: handled request 66
+2024-03-15 10:05:35 INFO api: handled request 67
+2024-03-15 10:05:40 INFO api: handled request 68
+2024-03-15 10:05:45 INFO api: handled request 69
+2024-03-15 10:05:50 INFO api: handled request 70
+2024-03-15 10:05:55 INFO api: handled request 71
+2024-03-15 10:06:00 INFO api: handled request 72
+2024-03-15 10:06:05 INFO api: handled request 73
+2024-03-15 10:06:10 INFO api: handled request 74
+2024-03-15 10:06:15 INFO api: handled request 75
+2024-03-15 10:06:20 INFO api: handled request 76
+2024-03-15 10:06:25 INFO api: handled request 77
+2024-03-15 10:06:30 INFO api: handled request 78
+2024-03-15 10:06:35 INFO api: handled request 79
+2024-03-15 10:06:40 INFO api: handled request 80
+2024-03-15 10:06:45 INFO api: handled request 81
+2024-03-15 10:06:50 INFO api: handled request 82
+2024-03-15 10:06:55 INFO api: handled request 83
+2024-03-15 10:07:00 INFO api: handled request 84
+2024-03-15 10:07:05 INFO api: handled request 85
+2024-03-15 10:07:10 INFO api: handled request 86
+2024-03-15 10:07:15 INFO api: handled request 87
+2024-03-15 10:07:20 INFO api: handled request 88
+2024-03-15 10:07:25 INFO api: handled request 89
+2024-03-15 10:07:30 INFO api: handled request 90
+2024-03-15 10:07:35 INFO api: handled request 91
+2024-03-15 10:07:40 INFO api: handled request 92
+2024-03-15 10:07:45 INFO api: handled request 93
+2024-03-15 10:07:50 INFO api: handled request 94
+2024-03-15 10:07:55 INFO api: handled request 95
+2024-03-15 10:08:00 INFO api: handled request 96
+2024-03-15 10:08:05 INFO api: handled request 97
+2024-03-15 10:08:10 INFO api: handled request 98
+2024-03-15 10:08:15 INFO api: handled request 99
+2024-03-15 10:08:20 INFO api: handled request 100
+2024-03-15 10:08:25 INFO api: handled request 101
+2024-03-15 10:08:30 INFO api: handled request 102
+2024-03-15 10:08:35 INFO api: handled request 103
+2024-03-15 10:08:40 INFO api: handled request 104
+2024-03-15 10:08:45 INFO api: handled request 105
+2024-03-15 10:08:50 INFO api: handled request 106
+2024-03-15 10:08:55 INFO api: handled request 107
+2024-03-15 10:09:00 INFO api: handled request 108
+2024-03-15 10:09:05 INFO api: handled request 109
+2024-03-15 10:09:10 INFO api: handled request 110
+2024-03-15 10:09:15 INFO api: handled request 111
+2024-03-15 10:09:20 INFO api: handled request 112
+2024-03-15 10:09:25 INFO api: handled request 113
+2024-03-15 10:09:30 INFO api: handled request 114
+2024-03-15 10:09:35 INFO api: handled request 115
+2024-03-15 10:09:40 INFO api: handled request 116
+2024-03-15 10:09:45 INFO api: handled request 117
+2024-03-15 10:09:50 INFO api: handled request 118
+2024-03-15 10:09:55 INFO api: handled request 119
+2024-03-15 10:00:01 ERROR api: cache miss for key 0
+2024-03-15 10:00:06 ERROR api: cache miss for key 1
+2024-03-15 10:00:11 ERROR api: cache miss for key 2
+2024-03-15 10:00:16 ERROR api: cache miss for key 3
+2024-03-15 10:00:21 ERROR api: cache miss for key 4
+2024-03-15 10:00:26 ERROR api: cache miss for key 5
+2024-03-15 10:00:31 ERROR api: cache miss for key 6
+2024-03-15 10:00:36 ERROR api: cache miss for key 7
+2024-03-15 10:00:41 ERROR api: cache miss for key 8
+2024-03-15 10:00:46 ERROR api: cache miss for key 9
+2024-03-15 10:00:51 ERROR api: cache miss for key 10
+2024-03-15 10:00:56 ERROR api: cache miss for key 11
+2024-03-15 10:01:01 ERROR api: cache miss for key 12
+2024-03-15 10:01:06 ERROR api: cache miss for key 13
+2024-03-15 10:01:11 ERROR api: cache miss for key 14
+2024-03-15 10:01:16 ERROR api: cache miss for key 15
+2024-03-15 10:01:21 ERROR api: cache miss for key 16
+2024-03-15 10:01:26 ERROR api: cache miss for key 17
+2024-03-15 10:01:31 ERROR api: cache miss for key 18
+2024-03-15 10:01:36 ERROR api: cache miss for key 19
+2024-03-15 10:01:41 ERROR api: cache miss for key 20
+2024-03-15 10:01:46 ERROR api: cache miss for key 21
+2024-03-15 10:01:51 ERROR api: cache miss for key 22
+2024-03-15 10:01:56 ERROR api: cache miss for key 23
+2024-03-15 10:02:01 ERROR api: cache miss for key 24
+2024-03-15 10:02:06 ERROR api: cache miss for key 25
+2024-03-15 10:02:11 ERROR api: cache miss for key 26
+2024-03-15 10:02:16 ERROR api: cache miss for key 27
+2024-03-15 10:02:21 ERROR api: cache miss for key 28
+2024-03-15 10:02:26 ERROR api: cache miss for key 29
+2024-03-15 10:02:31 ERROR api: cache miss for key 30
+2024-03-15 10:02:36 ERROR api: cache miss for key 31
+2024-03-15 10:02:41 ERROR api: cache miss for key 32
+2024-03-15 10:02:46 ERROR api: cache miss for key 33
+2024-03-15 10:02:51 ERROR api: cache miss for key 34
+2024-03-15 10:02:56 ERROR api: cache miss for key 35
+2024-03-15 10:03:01 ERROR api: cache miss for key 36
+2024-03-15 10:03:06 ERROR api: cache miss for key 37
+2024-03-15 10:03:11 ERROR api: cache miss for key 38
+2024-03-15 10:03:16 ERROR api: cache miss for key 39
+2024-03-15 10:03:21 ERROR api: cache miss for key 40
+2024-03-15 10:03:26 ERROR api: cache miss for key 41
+2024-03-15 10:03:31 ERROR api: cache miss for key 42
+2024-03-15 10:03:36 ERROR api: cache miss for key 43
+2024-03-15 10:03:41 ERROR api: cache miss for key 44
+2024-03-15 10:03:46 ERROR api: cache miss for key 45
+2024-03-15 10:03:51 ERROR api: cache miss for key 46
+2024-03-15 10:03:56 ERROR api: cache miss for key 47
+2024-03-15 10:04:01 ERROR api: cache miss for key 48
+2024-03-15 10:04:06 ERROR api: cache miss for key 49
+2024-03-15 10:04:11 ERROR api: cache miss for key 50
+2024-03-15 10:04:16 ERROR api: cache miss for key 51
+2024-03-15 10:04:21 ERROR api: cache miss for key 52
+2024-03-15 10:04:26 ERROR api: cache miss for key 53
+2024-03-15 10:04:31 ERROR api: cache miss for key 54
+2024-03-15 10:04:36 ERROR api: cache miss for key 55
+2024-03-15 10:04:41 ERROR api: cache miss for key 56
+2024-03-15 10:04:46 ERROR api: cache miss for key 57
+2024-03-15 10:04:51 ERROR api: cache miss for key 58
+2024-03-15 10:04:56 ERROR api: cache miss for key 59
+2024-03-15 10:05:01 ERROR api: cache miss for key 60
+2024-03-15 10:05:06 ERROR api: cache miss for key 61
+2024-03-15 10:05:11 ERROR api: cache miss for key 62
+2024-03-15 10:05:16 ERROR api: cache miss for key 63
+2024-03-15 10:05:21 ERROR api: cache miss for key 64
+2024-03-15 10:05:26 ERROR api: cache miss for key 65
+2024-03-15 10:05:31 ERROR api: cache miss for key 66
+2024-03-15 10:05:36 ERROR api: cache miss for key 67
+2024-03-15 10:05:41 ERROR api: cache miss for key 68
+2024-03-15 10:05:46 ERROR api: cache miss for key 69
+2024-03-15 10:05:51 ERROR api: cache miss for key 70
+2024-03-15 10:05:56 ERROR api: cache miss for key 71
+2024-03-15 10:06:01 ERROR api: cache miss for key 72
+2024-03-15 10:06:06 ERROR api: cache miss for key 73
+2024-03-15 10:06:11 ERROR api: cache miss for key 74
+2024-03-15 10:06:16 ERROR api: cache miss for key 75
+2024-03-15 10:06:21 ERROR api: cache miss for key 76
+2024-03-15 10:06:26 ERROR api: cache miss for key 77
+2024-03-15 10:06:31 ERROR api: cache miss for key 78
+2024-03-15 10:06:36 ERROR api: cache miss for key 79
+2024-03-15 10:06:41 ERROR api: cache miss for key 80
+2024-03-15 10:06:46 ERROR api: cache miss for key 81
+2024-03-15 10:06:51 ERROR api: cache miss for key 82
+2024-03-15 10:06:56 ERROR api: cache miss for key 83
+2024-03-15 10:07:01 ERROR api: cache miss for key 84
+2024-03-15 10:07:06 ERROR api: cache miss for key 85
+2024-03-15 10:07:11 ERROR api: cache miss for key 86
+2024-03-15 10:07:16 ERROR api: cache miss for key 87
+2024-03-15 10:07:21 ERROR api: cache miss for key 88
+2024-03-15 10:07:26 ERROR api: cache miss for key 89
+2024-03-15 10:07:31 ERROR api: cache miss for key 90
+2024-03-15 10:07:36 ERROR api: cache miss for key 91
+2024-03-15 10:07:41 ERROR api: cache miss for key 92
+2024-03-15 10:07:46 ERROR api: cache miss for key 93
+2024-03-15 10:07:51 ERROR api: cache miss for key 94
+2024-03-15 10:07:56 ERROR api: cache miss for key 95
+2024-03-15 10:08:01 ERROR api: cache miss for key 96
+2024-03-15 10:08:06 ERROR api: cache miss for key 97
+2024-03-15 10:08:11 ERROR api: cache miss for key 98
+2024-03-15 10:08:16 ERROR api: cache miss for key 99
+2024-03-15 10:08:21 ERROR api: cache miss for key 100
+2024-03-15 10:08:26 ERROR api: cache miss for key 101
+2024-03-15 10:08:31 ERROR api: cache miss for key 102
+2024-03-15 10:08:36 ERROR api: cache miss for key 103
+2024-03-15 10:08:41 ERROR api: cache miss for key 104
+2024-03-15 10:08:46 ERROR api: cache miss for key 105
+2024-03-15 10:08:51 ERROR api: cache miss for key 106
+2024-03-15 10:08:56 ERROR api: cache miss for key 107
+2024-03-15 10:09:01 ERROR api: cache miss for key 108
+2024-03-15 10:09:06 ERROR api: cache miss for key 109
+2024-03-15 10:09:11 ERROR api: cache miss for key 110
+2024-03-15 10:09:16 ERROR api: cache miss for key 111
+2024-03-15 10:09:21 ERROR api: cache miss for key 112
+2024-03-15 10:09:26 ERROR api: cache miss for key 113
+2024-03-15 10:09:31 ERROR api: cache miss for key 114
+2024-03-15 10:09:36 ERROR api: cache miss for key 115
+2024-03-15 10:09:41 ERROR api: cache miss for key 116
+2024-03-15 10:09:46 ERROR api: cache miss for key 117
+2024-03-15 10:09:51 ERROR api: cache miss for key 118
+2024-03-15 10:09:56 ERROR api: cache miss for key 119
+2024-03-15 10:05:30 ERROR api: payment gateway refused card 1000
+2024-03-15 10:05:31 ERROR api: payment gateway refused card 1001
+2024-03-15 10:05:32 ERROR api: payment gateway refused card 1002
+2024-03-15 10:05:33 ERROR api: payment gateway refused card 1003
+2024-03-15 10:05:34 ERROR api: payment gateway refused card 1004
